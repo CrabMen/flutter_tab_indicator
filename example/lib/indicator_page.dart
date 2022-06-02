@@ -6,10 +6,10 @@ class IndicatorPage extends StatefulWidget {
   @override
   _IndicatorPageState createState() => _IndicatorPageState();
 
-  final TabIndicatior tabIndicatior;
+  final TabIndicator tabIndicator;
   final String title;
 
-  const IndicatorPage({required this.tabIndicatior, required this.title});
+  const IndicatorPage({required this.tabIndicator, required this.title});
 }
 
 class _IndicatorPageState extends State<IndicatorPage>
@@ -57,7 +57,7 @@ class _IndicatorPageState extends State<IndicatorPage>
               unselectedLabelColor: Colors.black,
               isScrollable: true,
               indicatorWeight: 0,
-              indicator: widget.tabIndicatior,
+              indicator: widget.tabIndicator,
               indicatorSize: TabBarIndicatorSize.label,
               tabs: list.map((e) => Tab(child: Text(e, style: const TextStyle(height: 1), //解决中文垂直居中问题
                       ))).toList(),

@@ -17,32 +17,32 @@ class _HomePageState extends State<HomePage> {
     '遮罩',
   ];
 
-  TabIndicatior getIndicator(int index) {
+  TabIndicator getIndicator(int index) {
    if (index == 0) {
-     return const TabIndicatior();
+     return const TabIndicator();
    } else if (index == 1) {
-     return const TabIndicatior(width: 20);
+     return const TabIndicator(width: 20);
    } else if (index == 2) {
-     return const TabIndicatior(width: 4,height: 4,radius: 2);
+     return const TabIndicator(width: 4,height: 4,radius: 2);
    } else if (index == 3) {
-     return const TabIndicatior(width: 4,height: 4,radius: 2,align: TabIndicatiorAlignVertical.up);
+     return const TabIndicator(width: 4,height: 4,radius: 2,align: TabIndicatorAlignVertical.up);
    }else if (index == 4) {
-     return const TabIndicatior(
-       align: TabIndicatiorAlignVertical.center,
+     return const TabIndicator(
+       align: TabIndicatorAlignVertical.center,
        height:26,
        radius: 13,
        padding: EdgeInsets.symmetric(horizontal: -12,vertical: 0),
        color: Color.fromARGB(100, 26, 26, 255),
      );
    } else {
-     return const TabIndicatior();
+     return const TabIndicator();
    }
   }
   void onTap(int index) {
     String title = titles[index];
     Navigator.push(context, MaterialPageRoute(builder: (_) {
       return IndicatorPage(
-        tabIndicatior: getIndicator(index),
+        tabIndicator: getIndicator(index),
         title: title,
       );
     }));
