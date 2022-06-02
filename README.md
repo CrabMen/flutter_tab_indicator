@@ -2,6 +2,7 @@
 # flutter_tab_indicator
 A Flutter library to add the Common effect (line, bubble, dot ...) of tab indicator.
 
+![](https://img.shields.io/pub/v/flutter_tab_indicator?include_prereleases)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/CrabMen/flutter_tab_indicator/main)
 ![](https://img.shields.io/apm/l/vim-mode.svg)
 
