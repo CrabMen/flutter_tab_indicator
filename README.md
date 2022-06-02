@@ -18,7 +18,7 @@ A Flutter library to add the Common effect (line, bubble, dot ...) of tab indica
 | Showcases    |    GIF|
 | :-------- | --------:| 
 |00-00.underline |![](https://raw.githubusercontent.com/CrabMen/CMResources/master/flutter_tab_indicator/flutter_tab_indicator00.gif)|
-|00-01.underline_fixWidth |![](https://raw.githubusercontent.com/CrabMen/CMResources/master/flutter_tab_indicator/flutter_tab_indicator01.gif)|
+|00-01.underline_fixedWidth |![](https://raw.githubusercontent.com/CrabMen/CMResources/master/flutter_tab_indicator/flutter_tab_indicator01.gif)|
 |00-02.dot |![](https://raw.githubusercontent.com/CrabMen/CMResources/master/flutter_tab_indicator/flutter_tab_indicator02.gif)|
 |00-03.dot_up |![](https://raw.githubusercontent.com/CrabMen/CMResources/master/flutter_tab_indicator/flutter_tab_indicator03.gif)|
 |00-04.cover |![](https://raw.githubusercontent.com/CrabMen/CMResources/master/flutter_tab_indicator/flutter_tab_indicator04.gif)|
