@@ -1,7 +1,8 @@
 name: flutter_tab_indicator
-description: A new flutter plugin project.
+description: A Flutter library to add the Common effect (line, bubble, dot ...) of tab indicator.
 version: 0.0.1
-homepage:
+author: CrabMan<dart.flutter.1024@gmail.com>
+homepage: https://github.com/CrabMen/flutter_tab_indicator
 
 environment:
   sdk: ">=2.16.2 <3.0.0"
@@ -14,8 +15,6 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^1.0.0
-
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 

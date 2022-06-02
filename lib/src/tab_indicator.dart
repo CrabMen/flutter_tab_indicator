@@ -15,12 +15,12 @@ class TabIndicatior extends Decoration {
   @override
   final EdgeInsetsGeometry padding;
   const TabIndicatior({
-    this.height = 0,
+    this.height = 2,
     this.color = Colors.redAccent,
     this.width = 0,
-    this.radius = 0,
+    this.radius = 1,
     this.padding = EdgeInsets.zero,
-    this.align = TabIndicatiorAlignVertical.center,
+    this.align = TabIndicatiorAlignVertical.down,
   });
 
   @override
@@ -64,10 +64,12 @@ class _TabIndicatiorPainter extends BoxPainter {
 
   Rect _indicatorRectFor(Rect rect, TextDirection textDirection) {
     Rect indicator = padding.resolve(textDirection).deflateRect(rect);
+
     double width = indicatorWidth > 0 ? indicatorWidth : indicator.width;
     double height = indicatorHeight > 0 ? indicatorHeight : indicator.height;
     double left = (indicator.left+indicator.right - width)*0.5;
     double top;
+
     switch(align) {
       case TabIndicatiorAlignVertical.up:
         top = indicator.top;
@@ -76,9 +78,11 @@ class _TabIndicatiorPainter extends BoxPainter {
         top = indicator.bottom - height;
         break;
       default:
-        top = indicator.center.dy - height*0.5;
+        top = (indicator.height - height)*0.5;
         break;
     }
+    print(rect.toString() + indicator.toString() + height.toString() + top.toString());
+
     return Rect.fromLTWH(
       left,
       top ,

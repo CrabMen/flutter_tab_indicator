@@ -1,6 +1,6 @@
 # flutter_tab_indicator
 
-A new flutter plugin project.
+A Flutter library to add the Common effect (line, bubble, dot...) of tab indicator.
 
 ## Getting Started
 
