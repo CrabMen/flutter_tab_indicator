@@ -6,8 +6,8 @@ on:
     branches:    
       - main
     # Sequence of patterns matched against refs/tags
-    tags:
-    - '*.*.*'
+#     tags:
+#     - '*.*.*'
 
 jobs:
   flutter_install: 
