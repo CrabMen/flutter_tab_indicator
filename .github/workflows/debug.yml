@@ -1,0 +1,27 @@
+name: debug
+
+on:
+  push:
+    # Sequence of patterns matched against refs/heads
+    branches:    
+      - main
+    # Sequence of patterns matched against refs/tags
+    tags:
+    - '*.*.*'
+
+jobs:
+  flutter_install: 
+    runs-on: macos-latest
+    steps:
+     - uses: britannio/action-install-flutter@v1.1
+     - run: flutter doctor 
+     - run: echo install completed
+
+  
+  
+  
+   
+
+    
+    
+     
